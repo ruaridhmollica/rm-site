@@ -7,7 +7,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/heroku/x/hmetrics/onload"
-	"github.com/russross/blackfriday"
 )
 
 func main() {
@@ -19,14 +18,11 @@ func main() {
 
 	router := gin.New()
 	router.Use(gin.Logger())
-	router.LoadHTMLGlob("templates/*.tmpl.html")
+	router.LoadHTMLGlob("static/templates/*.html")
 	router.Static("/static", "static")
 
 	router.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "index.tmpl.html", nil)
-	})
-	router.GET("/mark", func(c *gin.Context) {
-		c.String(http.StatusOK, string(blackfriday.Run([]byte("**hi!**"))))
+		c.HTML(http.StatusOK, "index.html", nil)
 	})
 
 	router.Run(":" + port)
