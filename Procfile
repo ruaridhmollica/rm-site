@@ -1,1 +1,1 @@
-web: bin/rm
+web: bin/go-getting-started
