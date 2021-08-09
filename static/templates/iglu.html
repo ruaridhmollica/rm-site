@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+  <meta charset=“UTF-8”>
+  <meta name="Description" content="A website by Ruaridh Mollica about Ruaridh Mollica">
+  <link href="/static/fontawesome/css/all.min.css" rel="stylesheet" />
+  <link href="/static/css/mdb.min.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" href="/static/img/me.png">
+  <link rel="icon" href="/static/img/me.png" />
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Ruaridh Mollica</title>
+</head>
+
+
+<body style="background-color: #ffffff  !important;"  writeit-autostart>
+
+  <!-- DESKTOP Navbar-->
+<nav class="navbar navbar-expand-lg bg-dark desknav mobhide" style="background-color: #ffffff !important;">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse desknav mobhide pl-4 justify-content-center align-items-center text-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav mobhide">
+          <a class="nav-link navtitle"  style="font-size: 0.7em !important;" aria-current="page" id="home" href="/">HOME</a>
+          <a class="nav-link pl-5 navtitle"  style="font-size: 0.7em !important;" id="tour" href="/acting">ACTING</a>
+          <a class="nav-link pl-5 navtitle"  style="font-size: 0.7em !important;" href="/projects">PROJECTS</a>
+          <a class="nav-link pl-5 navtitle"  style="font-size: 0.7em !important;" href="/cv">CV</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ./ DESKTOP Navbar -->
+ 
+  <!--MOBILE Navbar-->
+<nav class="navbar navbar-light deskhide" style="background-color: #ffffff;">
+  <!-- Collapse button -->
+  <button class="navbar-toggler toggler-example deskhide" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+        class="fas fa-bars fa-1x p-2" style="font-size: 2em; background-color: #ffffff;"></i></span></button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse deskhide pt-5" id="navbarSupportedContent1" style="background-color: #ffffff !important; opacity: 100% !important;">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto deskhide" style="background-color: #ffffff !important; ">
+      <li class="nav-item active">
+        <a class="nav-link" style="font-size: 2em;" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-size: 2em;" href="/acting">Acting</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-size: 2em;" href="/projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="font-size: 2em;" href="/cv">CV</a>
+      </li>
+    </ul>
+    <!-- Links -->
+
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/. MOBILE Navbar-->
+
+
+<!------------------------------------ Begin Projects Section DESKTOP ------------------------------------------>
+
+<div class="card justify-content-center d-flex text-center" style="background-color: #181818;">
+
+    <div>
+        <div>
+        <div class="row pl-4 pt-3">
+        <h1 class="white-text float-left pl-4" style="font-weight: bold; font-size: 3em;">Iglü</h1>
+        <h3 class="white-text float-left pl-4 pt-3" style="font-weight: bold;"> - March 2020</h3>
+        </div>
+    
+        <div class="row">
+          <div class="col text-center">
+              <img class="" src="/static/img/iglu2.png" alt="iglu image" style="width: 100%; height: 100%; border-radius: 50%;">
+        </div>
+        <div class="col pt-5">
+              <p class="white-text pr-5 pt-5" style="font-weight: bold; font-size: 1.2em;"> Iglü is a software application designed to monitor 
+                and control a fully renewable smart home. This application was created by Nacdlow, a team of six 3rd Year 
+                students(including myself), assigned by the University for our Group Project task.</p>
+                <p class="white-text pr-5 pt-2"> This project consisted of: The smart home system, interfaced with as a responsive web application (PWA)
+                    Plugin API allowing devices and applications to interface with iglü
+                    Marketplace (we’ll get back to this) with additional plugins
+                    Internal wiki with training/learning materials, records of meetings, style guides, member roles, etc.
+                    Custom DNS server allowing us to test on mobile devices
+                    Payment gateway with Stripe (in testing mode)
+                    Custom Raspbian distribution to run the system on a Raspberry Pi, enabling iglü as a system service and adding debugging functionality
+                    Custom designed and 3D printed case for the Pi
+                    Plugin packager application to speed up compiling to selected operating systems, compressing, and packaging plugins for the marketplace</p>
+        
+             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+             <div class="row justify-content-center d-flex text-center pt-5">
+              <div class="col pl-5">
+                <button type="button" class="btn btn-md text-white" style="font-size: 1em; background-color: blue; font-weight: bold;"
+                  onclick="window.open(window.location.href='https://github.com/Nacdlow')">View on GitHub</button>
+              </div>
+              <div class="col pr-5">
+                <button type="button" class="btn btn-md text-white" style="font-size: 1em; background-color: blue; font-weight: bold;"
+                  onclick="window.open(window.location.href='https://demo.nacdlow.com/')">Demo the App</button>
+              </div>
+            </div>
+        
+                  </div>
+        </div> 
+
+        <div class="row">
+            <div class="col pt-5">
+                <h3 class="white-text pr-0 pt-3" style="font-weight: bold;"> Languages</h3>
+                <div class="row pt-4 pl-1">
+                    <div class="col">
+                      <img src="/static/img/golang-icon.svg" class="pt-0" alt="Golang" style="width: 100%; height: 100%;">
+                    </div>
+                    <div class="col">
+                      <i class="fab fa-html5 orange-text pt-4" style="font-size: 4em;"></i>
+                    </div>
+                    <div class="col">
+                      <i class="fab fa-css3-alt blue-text pt-4" style="font-size: 4em;"></i>
+                    </div>
+                    <div class="col">
+                      <i class="fab fa-js yellow-text pt-4" style="font-size: 4em;"></i>
+                    </div>
+                    <div class="col">
+                      <i class="fab fa-mdb blue-text pt-4" style="font-size: 4em;"></i>
+                    </div>
+                  </div>
+                  <div class="row pt-0 pl-1">
+                    <div class="col">
+                      <p class="card-text white-text" style="font-size:small;">Golang</p>
+                    </div>
+                    <div class="col">
+                      <p class="card-text white-text" style="font-size: small;">HTML5</p>
+                    </div>
+                    <div class="col">
+                      <p class="card-text white-text" style="font-size: small;">CSS3</p>
+                    </div>
+                    <div class="col">
+                      <p class="card-text white-text" style="font-size: small;">Javascript</p>
+                    </div>
+                    <div class="col">
+                      <p class="card-text white-text" style="font-size: small;">MDB</p>
+                    </div>
+                  </div>
+
+                  
+          </div>
+            <div class="col text-center pb-4">
+                <iframe width="710" height="430" src="https://www.youtube.com/watch?v=KMfItuTf2jQ">
+                </iframe>
+          </div>
+        
+          </div> 
+      </div>
+      </div>
+</div>
+
+  <!--------------------------------- End DESKTOP Projects Section -------------------------------------->
+
+
+
+
+
+
+  </body>
+
+  <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/js/popper.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/static/js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/js/WriteIt.js"></script>
+  </html>
