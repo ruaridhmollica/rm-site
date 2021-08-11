@@ -182,4 +182,24 @@ top:10em!important;
 visibility: visible!important;
 }
 
+/* This makes a stroke effect on the text*/
+
+svg{
+  font   : bold 70px Century Gothic, Arial;
+  width  : 90%;
+  height : 90px;
+}
+
+text{
+  fill            : red;
+  stroke          : rgb(255, 255, 255);
+  stroke-width    : .5px;
+  stroke-linejoin : round;
+  animation       : 2s pulsate infinite;
+}
+
+@keyframes pulsate {
+  50%{ stroke-width:5px }
+}
+
 
